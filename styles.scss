@@ -85,8 +85,36 @@ table {
 .navigation {
     display: flex;
     flex-direction: column;
+    gap: 8rem;
 
     .logo {
         display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+        svg {
+            width: 50%;
+            fill: transparent;
+            stroke: black;
+            stroke-width: 2px;
+        }
+    }
+
+    .main-nav,
+    .sec-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            font-size: 1rem;
+            color: inherit;
+        }
     }
 }
