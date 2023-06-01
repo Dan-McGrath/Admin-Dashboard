@@ -42,13 +42,13 @@ table {
 	border-spacing: 0;
 }
 
-/* End Reset */
+// End Reset 
 
-/* grid */
+// grid 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1%;
     grid-template-rows: repeat(12, 1fr);
     gap: 50px;
 
@@ -61,26 +61,28 @@ table {
 
 .message-board {
     background-color: blue;
-    grid-area: 2 / 4 / 6 / 4;
+    grid-area: 3 / 4 / 7 / 4;
     margin-bottom: 1rem;
 }
 
 .profile {
     background-color: blueviolet;
-    grid-area: 1 / 2 / 1 / 5;
+    grid-area: 1 / 2 / 3 / 6;
 }
 
 .projects {
     background-color: yellow;
-    grid-area: 2 / 2 / 12 / 4;
+    grid-area: 3 / 2 / 12 / 4;
 }
 
 .trending {
     background-color: tomato;
-    grid-area: 6 / 4 / 12 / 4
+    grid-area: 7 / 4 / 12 / 4
 }
 
-/* End Grid */
+//End Grid
+
+// Navigation
 
 .navigation {
     display: flex;
@@ -117,4 +119,32 @@ table {
             color: inherit;
         }
     }
+}
+
+// End Navigation
+
+// Profile 
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .profile-name {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+}
+
+// End Profile
+
+// Projects
+
+.projects {
+    
 }
