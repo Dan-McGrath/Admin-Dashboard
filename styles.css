@@ -72,8 +72,7 @@ table {
   grid-area: 1/2/3/6;
 }
 
-.projects {
-  background-color: yellow;
+.projects-section {
   grid-area: 3/2/12/4;
 }
 
@@ -127,4 +126,42 @@ table {
 .profile .profile-name {
   font-size: 4rem;
   font-weight: bold;
+}
+
+.projects-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-section > h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  gap: 3rem;
+  justify-items: center;
+}
+.projects .card {
+  border: 1px solid black;
+  padding: 1rem;
+  box-shadow: 0 0 20px 2px;
+  max-width: 800px;
+}
+.projects .card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.projects .card p {
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  top: 25%;
 }/*# sourceMappingURL=styles.css.map */
