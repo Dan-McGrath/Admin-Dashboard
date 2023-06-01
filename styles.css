@@ -44,29 +44,41 @@ table {
 
 /* End Reset */
 
+/* grid */
 .container {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-rows: repeat(12, 1fr);
+    gap: 50px;
+
 }
 
 .navigation {
     background-color: aqua;
-    grid-area: 1, 1, 2, 13;
+    grid-row: 1 / 13;
 }
 
 .message-board {
     background-color: blue;
+    grid-area: 2 / 4 / 6 / 4;
+    margin-bottom: 1rem;
 }
 
 .profile {
     background-color: blueviolet;
+    grid-area: 1 / 2 / 1 / 5;
 }
 
 .projects {
     background-color: yellow;
+    grid-area: 2 / 2 / 12 / 4;
 }
 
 .trending {
     background-color: tomato;
+    grid-area: 6 / 4 / 12 / 4
 }
+
+/* End Grid */
+
