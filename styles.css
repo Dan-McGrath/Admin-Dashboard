@@ -53,7 +53,6 @@ table {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 1%;
   grid-template-rows: repeat(12, 1fr);
-  gap: 50px;
 }
 
 .navigation {
@@ -62,23 +61,22 @@ table {
 }
 
 .message-board {
-  background-color: blue;
-  grid-area: 3/4/7/4;
+  grid-area: 4/4/8/4;
   margin-bottom: 1rem;
 }
 
 .profile {
   background-color: blueviolet;
   grid-area: 1/2/3/6;
+  gap: revert;
 }
 
 .projects-section {
-  grid-area: 3/2/12/4;
+  grid-area: 4/2/12/4;
 }
 
 .trending {
-  background-color: tomato;
-  grid-area: 7/4/12/4;
+  grid-area: 8/4/12/4;
 }
 
 .navigation {
@@ -93,13 +91,13 @@ table {
   justify-content: space-evenly;
 }
 .navigation .logo h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .navigation .logo svg {
-  width: 50%;
+  width: 25%;
   fill: transparent;
   stroke: black;
-  stroke-width: 2px;
+  stroke-width: 5px;
 }
 .navigation .main-nav,
 .navigation .sec-nav {
@@ -132,12 +130,13 @@ table {
   height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .projects-section > h2 {
   font-size: 3rem;
   text-align: center;
-  padding: 4rem;
+  margin-bottom: 1rem;
 }
 
 .projects {
@@ -149,19 +148,73 @@ table {
   justify-items: center;
 }
 .projects .card {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  box-shadow: 0 0 15px 2px;
+  border-radius: 20px;
   padding: 1rem;
-  box-shadow: 0 0 20px 2px;
   max-width: 800px;
 }
 .projects .card h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 .projects .card p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   position: relative;
   top: 25%;
+}
+
+.message-board {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.message-board h2 {
+  font-size: 3rem;
+}
+.message-board .message-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  box-shadow: 0 0 8px 2px;
+  border-radius: 20px;
+}
+.message-board .message-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.message-board .message-card p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+}
+.trending h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.trending .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  box-shadow: 0 0 8px 2px;
+  border-radius: 20px;
+  height: 100%;
+  place-items: center;
+}
+.trending .card .name {
+  padding: 2rem 0;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

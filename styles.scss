@@ -50,8 +50,6 @@ table {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1%;
     grid-template-rows: repeat(12, 1fr);
-    gap: 50px;
-
 }
 
 .navigation {
@@ -60,23 +58,22 @@ table {
 }
 
 .message-board {
-    background-color: blue;
-    grid-area: 3 / 4 / 7 / 4;
+    grid-area: 4 / 4 / 8 / 4;
     margin-bottom: 1rem;
 }
 
 .profile {
     background-color: blueviolet;
     grid-area: 1 / 2 / 3 / 6;
+    gap: revert;
 }
 
 .projects-section {
-    grid-area: 3 / 2 / 12 / 4;
+    grid-area: 4 / 2 / 12 / 4;
 }
 
 .trending {
-    background-color: tomato;
-    grid-area: 7 / 4 / 12 / 4
+    grid-area: 8 / 4 / 12 / 4
 }
 
 //End Grid
@@ -95,14 +92,14 @@ table {
         justify-content: space-evenly;
         
         h1 {
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         svg {
-            width: 50%;
+            width: 25%;
             fill: transparent;
             stroke: black;
-            stroke-width: 2px;
+            stroke-width: 5px;
         }
     }
 
@@ -147,12 +144,14 @@ table {
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .projects-section > h2 {
     font-size: 3rem;
     text-align: center;
-    padding: 4rem;
+    margin-bottom: 1rem;
+
 }
 
 .projects {
@@ -164,20 +163,23 @@ table {
     justify-items: center;
 
 
+
+
     .card {
-        border: 1px solid black;
-        padding: 1rem;
-        box-shadow: 0 0 20px 2px;
+        border: 1px solid rgba(0, 0, 0, 0.034);
+        box-shadow: 0 0 15px 2px;
+        border-radius: 20px;
+        padding: 1rem; 
         max-width: 800px;
         
         h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             margin-bottom: 1rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-align: center;
             position: relative;
             top: 25%;
@@ -185,3 +187,72 @@ table {
     }
 }
 
+// End Projects
+
+// Announcments
+
+.message-board {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .message-card {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.034);
+        box-shadow: 0 0 8px 2px; 
+        border-radius: 20px;
+
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// end anouncments
+
+// Trending
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.034);
+        box-shadow: 0 0 8px 2px; 
+        border-radius: 20px;
+        height: 100%;
+        place-items: center;
+        .name {
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            
+        }
+    }
+}
