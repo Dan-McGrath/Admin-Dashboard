@@ -92,7 +92,7 @@ table {
         justify-content: space-evenly;
         
         h1 {
-            font-size: 3rem;
+            font-size: 3.7rem;
         }
 
         svg {
@@ -111,8 +111,10 @@ table {
         gap: 1rem;
 
         a {
-            font-size: 1rem;
+            font-size: 2.5rem;
             color: inherit;
+            text-decoration: none;
+            padding: 0.75rem;
         }
     }
 }
@@ -200,6 +202,12 @@ table {
         font-size: 3rem;
     }
 
+    hr {
+        width: 80%;
+        height: 2px;
+        margin-top: 2rem;
+    }
+
     .message-card {
 
         display: flex;
@@ -214,7 +222,7 @@ table {
         h3 {
             font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 2rem;
+            padding-bottom: 2rem;
             text-align: center;
             padding-top: 1rem;
         }
@@ -234,9 +242,9 @@ table {
 .trending {
     display: flex;
     flex-direction: column;
-    
+    margin-top: 2rem;
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 2rem 0;
     }
 

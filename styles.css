@@ -91,7 +91,7 @@ table {
   justify-content: space-evenly;
 }
 .navigation .logo h1 {
-  font-size: 3rem;
+  font-size: 3.7rem;
 }
 .navigation .logo svg {
   width: 25%;
@@ -108,8 +108,10 @@ table {
 }
 .navigation .main-nav a,
 .navigation .sec-nav a {
-  font-size: 1rem;
+  font-size: 2.5rem;
   color: inherit;
+  text-decoration: none;
+  padding: 0.75rem;
 }
 
 .profile {
@@ -174,6 +176,11 @@ table {
 .message-board h2 {
   font-size: 3rem;
 }
+.message-board hr {
+  width: 80%;
+  height: 2px;
+  margin-top: 2rem;
+}
 .message-board .message-card {
   display: flex;
   flex-direction: column;
@@ -186,7 +193,7 @@ table {
 .message-board .message-card h3 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   padding-top: 1rem;
 }
@@ -199,9 +206,10 @@ table {
 .trending {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 .trending h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 2rem 0;
 }
 .trending .card {
